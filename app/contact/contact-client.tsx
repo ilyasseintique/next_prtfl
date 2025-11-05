@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Mail, MapPin, Phone, GitHub, LinkedIn, Send, MessageCircle } from "lucide-react"
+import { Mail, MapPin, Phone, Github, Linkedin, Send, MessageCircle } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -54,13 +54,13 @@ export default function ContactClient() {
 
   const socialLinks = [
     {
-      icon: <GitHub className="h-5 w-5" />,
+      icon: <Github className="h-5 w-5" />,
       label: "GitHub",
       value: "github.com/yourusername",
       href: "https://github.com/yourusername"
     },
     {
-      icon: <LinkedIn className="h-5 w-5" />,
+      icon: <Linkedin className="h-5 w-5" />,
       label: "LinkedIn",
       value: "linkedin.com/in/yourprofile",
       href: "https://linkedin.com/in/yourprofile"
