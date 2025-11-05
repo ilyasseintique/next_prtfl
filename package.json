@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "clean": "if exist .next rmdir /s /q .next",
+    "prebuild": "npm run clean"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
