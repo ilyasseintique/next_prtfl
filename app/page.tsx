@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
-import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react"
+import { ArrowRight, Download, GitHub, LinkedIn, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 
@@ -44,12 +44,12 @@ export default function HomePage() {
             <motion.div variants={fadeInUp} className="space-y-4">
               <h1 className="text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
                 Hi, I'm{" "}
-                <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-                  Your Name
+                <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent ">
+                  <i>ILYASSE IYYAD</i> 
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground sm:text-2xl">
-                Computer Science Student & Web Developer
+                Software Engineering Student passionate about building modern web experiences.
               </p>
             </motion.div>
 
@@ -59,7 +59,7 @@ export default function HomePage() {
               className="mx-auto max-w-2xl text-lg text-muted-foreground sm:text-xl"
             >
               Passionate about creating innovative digital solutions and exploring
-              the latest technologies. Currently studying Computer Science and
+              the latest technologies. Currently studying Software Engineering and
               building projects with React, Next.js, and TypeScript.
             </motion.p>
 
@@ -74,10 +74,12 @@ export default function HomePage() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" className="h-12 px-8">
-                <Download className="mr-2 h-4 w-4" />
-                Download Resume
-              </Button>
+              <a href="/mon-cv">
+                <Button variant="outline" size="lg" className="h-12 px-8">
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Resume
+                </Button>
+              </a>
             </motion.div>
 
             {/* Social Links */}
@@ -89,7 +91,7 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   aria-label="GitHub"
                 >
-                  <Github className="h-5 w-5" />
+                  <GitHub className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="sm" asChild>
@@ -99,7 +101,7 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
                 >
-                  <Linkedin className="h-5 w-5" />
+                  <LinkedIn className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="sm" asChild>
@@ -162,7 +164,7 @@ export default function HomePage() {
             <div className="flex flex-wrap justify-center gap-3">
               {[
                 "React", "Next.js", "TypeScript", "Node.js", "Python",
-                "Tailwind CSS", "PostgreSQL", "MongoDB", "AWS", "Git"
+                "Tailwind CSS", "bootstrap", "Git", "github", "matlab", "javascript", "typescript "  
               ].map((skill) => (
                 <motion.div
                   key={skill}

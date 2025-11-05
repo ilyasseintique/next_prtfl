@@ -1,5 +1,5 @@
 "use client"
-
+import Link from "next/link"
 import { motion } from "framer-motion"
 import { Download, MapPin, Calendar, Award } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
@@ -40,9 +40,9 @@ export default function AboutClient() {
         className="text-center space-y-8"
       >
         <Avatar className="h-32 w-32 mx-auto">
-          <AvatarImage src="/profile-photo.jpg" alt="Profile photo" />
+          <AvatarImage src="/profile-photo.webp" alt="Profile photo" />
           <AvatarFallback className="text-2xl">YN</AvatarFallback>
-        </Avatar>
+        </Avatar> 
 
         <div className="space-y-4">
           <h1 className="text-4xl font-bold">About Me</h1>
@@ -51,11 +51,13 @@ export default function AboutClient() {
             innovative web applications and exploring cutting-edge technologies.
           </p>
         </div>
-
-        <Button size="lg">
+        <a href="/mon-cv.pdf">
+          <Button size="lg">
           <Download className="mr-2 h-4 w-4" />
           Download Resume
-        </Button>
+        </Button> 
+        </a>
+        
       </motion.section>
 
       {/* Bio & Education */}
